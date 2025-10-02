@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="title_home">Задачи</string>
+    <string name="title_calender">Календарь</string>
+    <string name="title_stat">Статистика</string>
+    <string name="new_task">+</string>
+    <string name="task_text">Введите текст задачи</string>
+    <string name="task_details_title">Задача</string>
+    <string name="save_task">Сохранить</string>
+    <string name="completed">Выполнено</string>
+    <string name="data_text">Введите дату</string>
+    <string name="incomplete_tasks">Incomplete Tasks: %d</string>
+    <string name="complete_tasks">Complete Tasks: %d</string>
+
+
+</resources>

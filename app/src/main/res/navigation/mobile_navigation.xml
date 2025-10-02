@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <!-- Существующие фрагменты -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.taskmanager.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_calender"
+        android:name="com.example.taskmanager.ui.calender.CalenderFragment"
+        android:label="@string/title_calender"
+        tools:layout="@layout/fragment_calender" />
+
+    <fragment
+        android:id="@+id/navigation_stat"
+        android:name="com.example.taskmanager.ui.stat.StatFragment"
+        android:label="@string/title_stat"
+        tools:layout="@layout/fragment_stat">
+
+        <!-- Добавляем действия для перехода к новым фрагментам -->
+        <action
+            android:id="@+id/action_to_completed_tasks"
+            app:destination="@id/navigation_completed_tasks" />
+
+        <action
+            android:id="@+id/action_to_incomplete_tasks"
+            app:destination="@id/navigation_incomplete_tasks" />
+    </fragment>
+
+    <!-- Новые фрагменты -->
+    <fragment
+        android:id="@+id/navigation_completed_tasks"
+        android:name="com.example.taskmanager.ui.stat.CompletedTasksFragment"
+        android:label="Завершенные задачи"
+        tools:layout="@layout/fragment_completed_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_incomplete_tasks"
+        android:name="com.example.taskmanager.ui.stat.IncompleteTasksFragment"
+        android:label="Незавершенные задачи"
+        tools:layout="@layout/fragment_incomplete_tasks" />
+</navigation>

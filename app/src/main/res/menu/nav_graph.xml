@@ -1,0 +1,34 @@
+<!-- nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_stat">
+
+    <fragment
+        android:id="@+id/navigation_stat"
+        android:name="com.example.taskmanager.ui.stat.StatFragment"
+        android:label="StatFragment"
+        tools:layout="@layout/fragment_stat">
+
+        <action
+            android:id="@+id/action_stat_to_completed"
+            app:destination="@id/navigation_completed" />
+
+        <action
+            android:id="@+id/action_stat_to_incomplete"
+            app:destination="@id/navigation_incomplete" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_completed"
+        android:name="com.example.taskmanager.ui.stat.CompletedTasksFragment"
+        android:label="CompletedTasksFragment"
+        tools:layout="@layout/fragment_completed_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_incomplete"
+        android:name="com.example.taskmanager.ui.stat.IncompleteTasksFragment"
+        android:label="IncompleteTasksFragment"
+        tools:layout="@layout/fragment_incomplete_tasks" />
+</navigation>
