@@ -26,20 +26,19 @@
 ## Скриншоты
 
 ### Главный экран
-![Главный экран](screenshots/Screenshot_task.jpg)
+![Главный экран](app/screenshots/Screenshot_task.jpg)
 
 ### Фильтрация
-![Фильтрация по категории "Личное"](screenshots/Screenshot_filter.jpg)
+![Фильтрация по категории "Личное"](app/screenshots/Screenshot_filter.jpg)
 
 ### Календарь
-![Календарь](screenshots/Screenshot_calender.jpg)
+![Календарь](app/screenshots/Screenshot_calender.jpg)
 
 ### Статистика
-![Статистика](screenshots/Screenshot_stat.jpg)
+![Статистика](app/screenshots/Screenshot_stat.jpg)
 
-### Статистика(авершенные задачи)
-![Статистика по завершенным задачам](screenshots/Screenshot_complete.jpg)
-
+### Завершенные задачи
+![Статистика по завершенным задачам](app/screenshots/Screenshot_complete.jpg)
 
 ---
 
