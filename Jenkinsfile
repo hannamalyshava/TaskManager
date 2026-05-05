@@ -12,15 +12,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Build project"
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
 
         stage('Static Analysis') {
             steps {
-                echo "Static analysis"
-                sh 'mvn checkstyle:check'
+                bat 'mvn checkstyle:check'
             }
         }
 
@@ -29,8 +27,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                echo "Deploy to Nexus"
-                sh 'mvn deploy'
+                bat 'mvn deploy'
             }
         }
     }
