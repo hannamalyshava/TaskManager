@@ -9,7 +9,11 @@ pipeline {
                     branch: "${env.BRANCH_NAME}"
             }
         }
-
+ stage('Info') {
+            steps {
+                bat 'gradlew.bat build --info'
+            }
+        }
         stage('Build') {
             steps {
                 bat 'gradlew.bat build'
@@ -27,11 +31,7 @@ pipeline {
                 bat 'gradlew.bat check'
             }
         }
-             stage('Info') {
-            steps {
-                bat 'gradlew.bat build --info'
-            }
-        }
+            
 
         stage('Upload Artifact') {
             when {
