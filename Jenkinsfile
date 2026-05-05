@@ -27,6 +27,11 @@ pipeline {
                 bat 'gradlew.bat check'
             }
         }
+             stage('Info') {
+            steps {
+                bat 'gradlew.bat build --info'
+            }
+        }
 
         stage('Upload Artifact') {
             when {
